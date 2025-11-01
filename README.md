@@ -42,7 +42,7 @@ DB_PASSWORD=your_db_pass
 ```bash
 php artisan migrate
 or with seeds
-php artisan migreate --seed
+php artisan migrate --seed
 ```
 ### 6. Run Seeders (Optional)
 ```bash
