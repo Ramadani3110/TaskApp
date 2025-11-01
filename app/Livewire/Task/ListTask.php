@@ -93,7 +93,6 @@ class ListTask extends Component
             $this->title = $task->title;
             $this->description = $task->description;
             $this->due_date = Carbon::parse($task->due_date)->format('m/d/Y');
-            $this->status = $task->status;
             $this->showEditModal = true;
             $this->dispatch('init-edit-datepicker');
         }
@@ -119,7 +118,6 @@ class ListTask extends Component
                 'title' => $this->title,
                 'description' => $this->description,
                 'due_date' => $formattedDate,
-                'status' => $this->status,
             ]);
 
             $this->swalSuccess([
